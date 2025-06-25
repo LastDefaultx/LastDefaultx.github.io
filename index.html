@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tosferina - Información Completa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1b2a;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1b263b;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header marquee {
+      font-size: 30px;
+      color: #e0e1dd;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #415a77;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      color: #edf6f9;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e0aaff;
+      color: #1b263b;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .intro img {
+      border-radius: 12px;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .image-control {
+      margin-top: 15px;
+    }
+
+    video {
+      border: 3px solid #e0aaff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: block;
+      margin: 20px auto;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #e0aaff;
+      color: #1b263b;
+      padding: 10px 20px;
+      margin: 10px 0;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: #c77dff;
+      transform: scale(1.05);
+    }
+
+    .highlight {
+      background-color: #33415c;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #e0e1dd;
+      color: #1b263b;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #778da9;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <marquee behavior="scroll" direction="left">TOSFERINA - GUÍA COMPLETA</marquee>
+  </header>
+
+  <nav>
+
+    <a href="file:///C:/Users/marti/Downloads/sintomas.html">Síntomas</a>
+    <a href="file:///C:/Users/marti/Downloads/tratamientos.html">Tratamientos</a>
+    <a href="prevencion.html">Prevención</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="mas_informacion.html">Más Información</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <section>
+    <h2 style="text-align: center;">¿Qué es la Tosferina?</h2>
+    <div class="highlight">
+      <p>La tosferina es una enfermedad infecciosa muy contagiosa causada por la bacteria <strong>Bordetella pertussis</strong>.
+        Se caracteriza por accesos de tos severa que dificultan la respiración. Puede ser mortal en bebés no vacunados.</p>
+      <p>Esta enfermedad afecta principalmente el sistema respiratorio y se transmite fácilmente a través de gotículas expulsadas al toser o estornudar.
+        Afecta con mayor gravedad a niños pequeños y personas con sistemas inmunitarios debilitados.</p>
+      <p>El control y la prevención a través de la vacunación y medidas higiénicas son esenciales para reducir su impacto en la salud pública.</p>
+    </div>
+
+    <div class="intro">
+      <img id="tosferinaImagen" src="https://www.pediatra-neumologo.com/img/sections/services/single/tosferina_sintomas.jpg"
+        alt="Imagen ilustrativa sobre la tosferina" width="400" />
+      <div class="image-control">
+        <label for="imageSize">Cambiar tamaño de la imagen:</label><br />
+        <input type="range" id="imageSize" min="200" max="700" value="400" oninput="cambiarTamañoImagen()" />
+      </div>
+    </div>
+
+    <h3 style="text-align: center;">Video educativo sobre la Tosferina</h3>
+    <video id="videoTosferina" controls width="500">
+      <source src="C:\Users\marti\Downloads\Download2.mp4" type="video/mp4" />
+      Tu navegador no soporta videos.
+    </video>
+    <div class="image-control" style="text-align: center;">
+      <label for="videoSize">Cambiar tamaño del video:</label><br />
+      <input type="range" id="videoSize" min="300" max="800" value="500" oninput="cambiarTamañoVideo()" />
+    </div>
+
+    <h3>Síntomas Principales</h3>
+    <ul>
+      <li>Tos intensa y persistente que puede durar varias semanas y provoca dificultad respiratoria.</li>
+      <li>Dificultad para respirar debido a la inflamación y estrechamiento de las vías respiratorias.</li>
+      <li>Vómito después de episodios de tos prolongados, común en niños pequeños.</li>
+      <li>Fatiga extrema como resultado de la falta de sueño y esfuerzo respiratorio.</li>
+      <li>Silbido agudo al respirar (estridor), causado por la obstrucción de las vías respiratorias superiores.</li>
+    </ul>
+    <a class="button" href="sintomas.html">Ver todos los síntomas</a>
+
+    <h3>Estadísticas Globales</h3>
+    <table>
+      <tr>
+        <th>País</th>
+        <th>Casos Anuales</th>
+        <th>Vacunación (%)</th>
+      </tr>
+      <tr>
+        <td>Estados Unidos</td>
+        <td>15,000</td>
+        <td>92%</td>
+      </tr>
+      <tr>
+        <td>Brasil</td>
+        <td>10,000</td>
+        <td>85%</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>50,000</td>
+        <td>78%</td>
+      </tr>
+      <tr>
+        <td>Ecuador</td>
+        <td>3,000</td>
+        <td>88%</td>
+      </tr>
+    </table>
+    <a class="button" href="estadisticas.html">Ver más estadísticas</a>
+
+    <h3>¿Cómo se previene?</h3>
+    <div class="highlight">
+      <p>La mejor forma de prevenir la tosferina es a través de la vacunación DTPa, que protege contra la difteria, tétanos y tosferina.
+        Esta vacuna se recomienda en varias dosis desde la infancia y con refuerzos en la adolescencia y la adultez.</p>
+      <p>Además de la vacunación, mantener buenas prácticas de higiene, como lavarse las manos frecuentemente y evitar el contacto cercano con personas infectadas, es fundamental para reducir el riesgo.</p>
+      <p>Las mujeres embarazadas deben recibir la vacuna para proteger a sus bebés durante los primeros meses de vida, cuando son más vulnerables.</p>
+    </div>
+    <a class="button" href="prevencion.html">Más sobre prevención</a>
+
+    <h3>Tratamientos Disponibles</h3>
+    <ul>
+      <li>Antibióticos prescritos por un médico, que ayudan a reducir la transmisión y a acelerar la recuperación si se administran temprano.</li>
+      <li>Reposo adecuado y buena hidratación para apoyar la recuperación del paciente.</li>
+      <li>Hospitalización en casos graves para monitorizar la respiración y administrar oxígeno o soporte respiratorio si es necesario.</li>
+      <li>En bebés y personas con complicaciones, se pueden requerir cuidados intensivos para prevenir daños mayores.</li>
+    </ul>
+    <a class="button" href="tratamientos.html">Ver tratamientos completos</a>
+
+    <!-- Nueva sección Más Información -->
+    <h3>Más Información</h3>
+    <div class="highlight">
+      <p>La tosferina puede afectar a personas de todas las edades, pero es especialmente peligrosa para los lactantes menores de 6 meses, que pueden presentar complicaciones como neumonía, convulsiones y daños cerebrales debido a la falta de oxígeno.</p>
+      <p>En adolescentes y adultos, la tosferina puede confundirse con una tos persistente común, lo que dificulta el diagnóstico y facilita la propagación a personas más vulnerables.</p>
+      <p>La inmunidad proporcionada por la vacuna disminuye con el tiempo, por lo que es importante recibir dosis de refuerzo periódicas para mantener la protección.</p>
+      <p>El diagnóstico se realiza mediante pruebas de laboratorio, como el cultivo bacteriano o PCR, que detectan la presencia de Bordetella pertussis en las vías respiratorias.</p>
+      <p>El aislamiento de personas infectadas durante las primeras semanas de la enfermedad es crucial para evitar brotes en comunidades, especialmente en guarderías y escuelas.</p>
+      <p>Actualmente, la tosferina sigue siendo un desafío en muchos países con baja cobertura de vacunación o donde existen barreras para el acceso a la atención médica.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Información sobre la Tosferina | Contacto: info@tosferina.com
+  </footer>
+
+  <script>
+    function cambiarTamañoImagen() {
+      var slider = document.getElementById('imageSize');
+      var imagen = document.getElementById('tosferinaImagen');
+      imagen.width = slider.value;
+    }
+
+    function cambiarTamañoVideo() {
+      var slider = document.getElementById('videoSize');
+      var video = document.getElementById('videoTosferina');
+      video.width = slider.value;
+    }
+  </script>
+</body>
+
+</html>

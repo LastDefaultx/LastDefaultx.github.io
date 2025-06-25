@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Síntomas de la Tosferina</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1b2a;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1b263b;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 30px;
+      color: #e0e1dd;
+    }
+
+    nav {
+      background-color: #415a77;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #edf6f9;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e0aaff;
+      color: #1b263b;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2,
+    h3 {
+      text-align: center;
+      color: #e0aaff;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .image-box img {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .image-control {
+      margin-top: 10px;
+    }
+
+    .highlight {
+      background-color: #33415c;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #e0aaff;
+      color: #1b263b;
+      padding: 10px 20px;
+      margin: 20px auto;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #c77dff;
+    }
+
+    footer {
+      background-color: #1b263b;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>SÍNTOMAS DE LA TOSFERINA</h1>
+  </header>
+
+  <nav>
+    <a href="file:///C:/Users/marti/Downloads/Darwinfinal.html">Inicio</a>
+    <a href="sintomas.html">Síntomas</a>
+    <a href="tratamientos.html">Tratamientos</a>
+    <a href="prevencion.html">Prevención</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="mas_informacion.html">Más Información</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <section>
+    <h2>¿Qué síntomas provoca la tosferina?</h2>
+    <div class="highlight">
+      <p>La tosferina se desarrolla en etapas y sus síntomas pueden confundirse inicialmente con un resfriado común. A medida que avanza, provoca episodios de tos intensa que dificultan respirar, especialmente en niños y bebés.</p>
+    </div>
+
+    <div class="image-box">
+      <img id="imgBacteria" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfM_4SIzUC7g2fOtbk99IsKz2pYFeSAk9m6g&s" alt="Bacteria Bordetella pertussis" />
+      <div class="image-control">
+        <label for="sliderBacteria">Ajustar tamaño imagen:</label><br />
+        <input type="range" id="sliderBacteria" min="150" max="800" value="600" oninput="ajustarTamano('imgBacteria', this.value)" />
+      </div>
+      <p><em>Imagen de la bacteria Bordetella pertussis</em></p>
+    </div>
+
+    <h3>Etapa 1: Catarro</h3>
+    <p>Durante los primeros 7 a 10 días, los síntomas son leves e incluyen:</p>
+    <ul>
+      <li>Congestión nasal</li>
+      <li>Estornudos</li>
+      <li>Fiebre baja</li>
+      <li>Tos leve ocasional</li>
+    </ul>
+
+    <h3>Etapa 2: Paroxística</h3>
+    <p>Es la etapa más grave y puede durar entre 1 a 6 semanas. Se caracteriza por:</p>
+    <ul>
+      <li>Tos intensa en ráfagas</li>
+      <li>Vómitos inducidos por la tos</li>
+      <li>Fatiga severa después de los ataques</li>
+      <li>Silbido o “gallo” al respirar profundamente tras toser</li>
+      <li>Piel azulada en casos graves (por falta de oxígeno)</li>
+    </ul>
+
+    <div class="image-box">
+      <img id="imgNina" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG4U8cGleBfVDBucp5fgu-9RfgL4ln9aw73Q&s" alt="Niña con tosferina" />
+      <div class="image-control">
+        <label for="sliderNina">Ajustar tamaño imagen:</label><br />
+        <input type="range" id="sliderNina" min="150" max="800" value="600" oninput="ajustarTamano('imgNina', this.value)" />
+      </div>
+      <p><em>Niña afectada por síntomas graves de tosferina</em></p>
+    </div>
+
+    <h3>Etapa 3: Recuperación</h3>
+    <p>Los síntomas disminuyen lentamente. Sin embargo, la tos puede continuar durante semanas o incluso meses:</p>
+    <ul>
+      <li>Tos menos frecuente pero persistente</li>
+      <li>Recuperación gradual de la energía</li>
+    </ul>
+
+    <div class="highlight">
+      <p>En bebés menores de 6 meses, los síntomas pueden ser muy peligrosos, incluso sin tos evidente. En estos casos pueden aparecer pausas respiratorias, lo cual es una emergencia médica.</p>
+    </div>
+
+    <h3>¿Cuándo acudir al médico?</h3>
+    <ul>
+      <li>Cuando la tos es tan intensa que causa vómitos o dificultad para respirar.</li>
+      <li>Si un bebé tiene pausas respiratorias, color azulado o dificultad para alimentarse.</li>
+      <li>Ante cualquier síntoma persistente tras una supuesta gripe común.</li>
+    </ul>
+
+    <a class="button" href="tratamientos.html">Ver tratamientos disponibles</a>
+    <a class="button" href="file:///C:/Users/marti/Downloads/Darwinfinal.html">Volver al inicio</a>
+  </section>
+
+  <footer>
+    © 2025 Información sobre la Tosferina | Contacto: info@tosferina.com
+  </footer>
+
+  <script>
+    function ajustarTamano(id, valor) {
+      document.getElementById(id).style.maxWidth = valor + 'px';
+    }
+  </script>
+</body>
+
+</html>

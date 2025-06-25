@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prevención de la Tosferina</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1b2a;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1b263b;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header marquee {
+      font-size: 30px;
+      color: #e0e1dd;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #415a77;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #edf6f9;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e0aaff;
+      color: #1b263b;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2,
+    h3 {
+      text-align: center;
+      color: #e0aaff;
+    }
+
+    p {
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+
+    .highlight {
+      background-color: #33415c;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .image-box img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      max-width: 100%;
+      height: auto;
+    }
+
+    video {
+      border: 3px solid #e0aaff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .image-control {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    input[type=range] {
+      width: 250px;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #e0aaff;
+      color: #1b263b;
+      padding: 10px 20px;
+      margin: 20px 10px 10px 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #c77dff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #1b263b;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <marquee behavior="scroll" direction="left">PREVENCIÓN DE LA TOSFERINA</marquee>
+  </header>
+
+  <nav>
+    <a href="file:///C:/Users/marti/Downloads/Darwinfinal.html">Inicio</a>
+    <a href="sintomas.html">Síntomas</a>
+    <a href="tratamientos.html">Tratamientos</a>
+    <a href="prevencion.html">Prevención</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="mas_informacion.html">Más Información</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <section>
+    <h2>Medidas esenciales para prevenir la tosferina</h2>
+    <div class="highlight">
+      <p>La tosferina es una enfermedad altamente contagiosa causada por la bacteria <strong>Bordetella pertussis</strong>, que afecta principalmente a lactantes y niños pequeños. Sin embargo, puede prevenirse eficazmente mediante un conjunto de acciones que involucran vacunación, higiene y hábitos saludables.</p>
+      <p>Adoptar estas medidas no solo protege al individuo, sino que también ayuda a reducir la circulación del patógeno en la comunidad, previniendo brotes y complicaciones graves.</p>
+    </div>
+
+    <h3>Vacunación</h3>
+    <div class="image-box">
+      <img id="imgVacunacion" src="https://hospitalvozandes.com/wp-content/uploads/2022/04/shutterstock_1912964863-scaled.jpg" alt="Vacunación infantil" />
+      <div class="image-control">
+        <label for="sliderVacunacion">Ajustar tamaño imagen:</label><br />
+        <input type="range" id="sliderVacunacion" min="200" max="700" value="400" oninput="ajustarImagen('imgVacunacion', 'sliderVacunacion')" />
+      </div>
+      <p><em>Vacunación infantil contra la tosferina</em></p>
+    </div>
+    <p>La vacuna DTPa (difteria, tétanos y tosferina acelular) es la principal herramienta para prevenir la tosferina. Se administra en una serie de dosis durante la infancia, generalmente a los 2, 4, 6, y 15-18 meses, con refuerzos en la niñez y adolescencia.</p>
+    <p>Es vital que las mujeres embarazadas reciban la vacuna durante el tercer trimestre, ya que los anticuerpos que generan protegen al recién nacido durante sus primeros meses de vida, cuando es más vulnerable.</p>
+    <p>Además, la vacunación de adultos y adolescentes contribuye a reducir la transmisión de la bacteria a los más pequeños y a personas con sistemas inmunitarios debilitados.</p>
+
+    <h3>Prácticas de higiene</h3>
+    <div class="image-box">
+      <img id="imgHigiene" src="https://marketplace.canva.com/EAF1IyL22Ko/3/0/1600w/canva-tarjetas-educativas-ciencias-del-lavado-de-manos-ilustrativo-azul-y-rosa-PcJo74Rz_wg.jpg" alt="Lavado de manos" />
+      <div class="image-control">
+        <label for="sliderHigiene">Ajustar tamaño imagen:</label><br />
+        <input type="range" id="sliderHigiene" min="200" max="700" value="400" oninput="ajustarImagen('imgHigiene', 'sliderHigiene')" />
+      </div>
+      <p><em>Lavado frecuente de manos para prevenir enfermedades</em></p>
+    </div>
+    <p>Una correcta higiene de manos es fundamental para impedir la propagación de la tosferina. Se recomienda lavarse con agua y jabón al menos 20 segundos o usar soluciones a base de alcohol si no hay agua disponible.</p>
+    <p>Además, cubrirse la boca y la nariz al toser o estornudar, usando pañuelos desechables o el ángulo interno del codo, ayuda a evitar que las gotas respiratorias infecten a otras personas o contaminen superficies.</p>
+    <p>La limpieza y desinfección frecuente de objetos y superficies de uso común es también esencial, especialmente en hogares, guarderías y escuelas.</p>
+
+    <h3>Aislamiento y cuidado comunitario</h3>
+    <p>Evitar el contacto cercano con personas que presenten síntomas respiratorios compatibles con tosferina es crucial para prevenir contagios.</p>
+    <p>Si se presenta tos persistente o accesos de tos severa, es importante buscar atención médica inmediata y permanecer en aislamiento para evitar transmitir la enfermedad a otros, sobre todo a lactantes y personas con factores de riesgo.</p>
+    <p>En entornos escolares y comunitarios, se deben implementar protocolos de vigilancia y control que permitan detectar casos tempranos y evitar la propagación masiva.</p>
+    <p>Promover la educación sanitaria y la comunicación efectiva con la comunidad son herramientas clave para fomentar prácticas responsables y prevenir brotes.</p>
+
+    <h3>Video educativo</h3>
+    <video id="videoPrevencion" controls width="600">
+      <source src="C:\Users\marti\Downloads\Download3.mp4" type="video/mp4" />
+      Tu navegador no soporta videos.
+    </video>
+    <div class="image-control">
+      <label for="videoSize">Ajustar tamaño del video:</label><br />
+      <input type="range" id="videoSize" min="300" max="800" value="600" oninput="cambiarTamañoVideo()" />
+    </div>
+
+    <a class="button" href="index.html">Volver al Inicio</a>
+    <a class="button" href="mas_informacion.html">Más Información</a>
+  </section>
+
+  <footer>
+    © 2025 Información sobre la Tosferina | Contacto: info@tosferina.com
+  </footer>
+
+  <script>
+    function ajustarImagen(imgId, sliderId) {
+      var img = document.getElementById(imgId);
+      var slider = document.getElementById(sliderId);
+      img.style.width = slider.value + "px";
+      img.style.height = "auto";
+    }
+
+    function cambiarTamañoVideo() {
+      var slider = document.getElementById('videoSize');
+      var video = document.getElementById('videoPrevencion');
+      video.width = slider.value;
+    }
+  </script>
+</body>
+
+</html>
